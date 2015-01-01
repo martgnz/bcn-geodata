@@ -1,4 +1,6 @@
 bcn-maps
 ========
+Converted from SHP with QGIS.
 
-geojson and topojson files about barcelona extracted from CartoBCN
+
+Source: Ajuntament de Barcelona / [CartoBCN](http://w20.bcn.cat/cartobcn/). License: CC-BY.
