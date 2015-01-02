@@ -1,4 +1,4 @@
-bcn-maps
+bcn-geodata
 ========
 Converted from SHP with QGIS.
 
