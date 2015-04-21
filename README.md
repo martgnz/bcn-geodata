@@ -7,10 +7,13 @@ The official shapefiles from Barcelona, converted to GeoJSON and TopoJSON for ma
 
 - Extract the zip and the `BCN_DIVADM_ED50_SHP.ZIP` file again. We have five different files. First, the basic statistic area, then `Àrea d'interès`, which is an area important for statistic purposes (but it covers only Montjuïc), after that the neighbourhoods, the districts and the census area. We will first convert the shapefiles to GeoJSON, using the `ogr2ogr` tool. [A good tutorial](http://ben.balter.com/2013/06/26/how-to-convert-shapefiles-to-geojson-for-use-on-github/) if you don't know what I'm talking about. Let's go!
 
+A good catch beforehand by @oscarfonts: We use [the official NTv2 grid of the ICC](https://github.com/oscarfonts/gt-datumshift/blob/master/icc-tests/src/test/resources/org/geotools/referencing/factory/gridshift/100800401.gsb?raw=true) for improving the accuracy. Download the file and put it on the same folder as your shapefiles. Then run the following snippet:
+
 ```bash
-ogr2ogr -f GeoJSON \
--t_srs crs:84 \
-output.geojson \
+ogr2ogr -f "GeoJSON" \
+-s_srs "+init=epsg:23031 +nadgrids=./100800401.gsb +wktext" \
+-t_srs EPSG:4326 \
+output.json \
 NAME_OF_YOUR_SHAPEFILE.shp
 ```
 You can convert all the shapefiles that are interesting for you through this way.
