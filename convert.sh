@@ -58,7 +58,7 @@ BCN_Secció_Censal_ED50_SHP.shp
 
 topojson -o seccio-censal_topo.json \
 seccio-censal_geo.json \
--p codi-AEB=C_AEB,codi=CSecCens
+-p districte=C_Distri,seccioc=C_SecCens
 
 mkdir -p output/seccio-censal && mv *.json output/seccio-censal
 
