@@ -1,59 +1,28 @@
-Barcelona Geodata
+Barcelona geodata
 =================
-The official shapefiles from Barcelona, converted to GeoJSON and TopoJSON for making your life easier.
+The [official shapefiles](http://w20.bcn.cat/cartobcn/default.aspx) of Barcelona, converted to GeoJSON and TopoJSON for making your life easier.
 
-## CDN
-By popular request, here are the links for using the files directly, using [RawGit](https://rawgit.com/):
+*Check out [bcn-atlas](https://github.com/martgnz/bcn-atlas) to generate your TopoJSON with combined features, fine-grained controls and no need of external dependencies.*
 
-Àrea estadística:
-```
-https://cdn.rawgit.com/martgnz/bcn-geodata/master/area-estadistica/area-estadistica_geo.json
-```
-```
-https://cdn.rawgit.com/martgnz/bcn-geodata/master/area-estadistica/area-estadistica_topo.json
-```
+## Metadata
 
-Àrea d'interès:
-```
-https://cdn.rawgit.com/martgnz/bcn-geodata/master/area-interes/area-interes_geo.json
-```
-```
-https://cdn.rawgit.com/martgnz/bcn-geodata/master/area-interes/area-interes_topo.json
-```
-
-Barris:
-```
-https://cdn.rawgit.com/martgnz/bcn-geodata/master/barris/barris_geo.json
-```
-```
-https://cdn.rawgit.com/martgnz/bcn-geodata/master/barris/barris_topo.json
-```
-
-Districtes:
-```
-https://cdn.rawgit.com/martgnz/bcn-geodata/master/districtes/districtes_geo.json
-```
-```
-https://cdn.rawgit.com/martgnz/bcn-geodata/master/districtes/districtes_topo.json
-```
-
-Secció censal:
-```
-https://cdn.rawgit.com/martgnz/bcn-geodata/master/seccio-censal/seccio-censal_geo.json
-```
-```
-https://cdn.rawgit.com/martgnz/bcn-geodata/master/seccio-censal/seccio-censal_topo.json
-```
+Please read the [metadata file](http://w20.bcn.cat/cartobcn/getFile.ashx?t=bdd&f=47185360245555) for a description of every file and field.
 
 ## Recreate the files
-Assuming that you have [ogr2ogr](https://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries) and [topojson](https://github.com/mbostock/topojson) installed:
+Assuming that you have [ogr2ogr](https://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries) and [topojson-server](https://github.com/topojson/topojson-server) installed globally:
 
 - Run the script
 ```bash
 $ ./convert.sh
 ```
-- Voilà! Find the files in the `src/output` folder.
+- Voilà! Find the files in their respectives folder.
 
-You can tweak the script for maintaining more properties from the original shapefile or for adjusting the simplification. Thanks to [@oscarfonts](https://github.com/oscarfonts) for the NTv2 ICC grid.
+You can tweak the script to delete properties from the original shapefile and adjust the simplification.
 
-Source: Ajuntament de Barcelona / [CartoBCN](http://w20.bcn.cat/cartobcn/). License: CC-BY.
+Thanks to [@oscarfonts](https://github.com/oscarfonts) for the NTv2 ICC grid.
+
+## Source
+
+Ajuntament de Barcelona / [CartoBCN](http://w20.bcn.cat/cartobcn/) ([CC-BY](http://w133.bcn.cat/geoportal/descargas/ca_ca_cond_us_carto.pdf)).
+
+Last data update: 28/11/2018.
