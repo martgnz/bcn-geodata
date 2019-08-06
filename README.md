@@ -2,7 +2,7 @@ Barcelona geodata
 =================
 The [official shapefiles](http://w20.bcn.cat/cartobcn/default.aspx) of Barcelona, converted to GeoJSON and TopoJSON for making your life easier.
 
-*Check out [bcn-atlas](https://github.com/martgnz/bcn-atlas) to generate your TopoJSON with combined features, fine-grained controls and no need of external dependencies.*
+*[Check out [bcn-atlas](https://github.com/martgnz/bcn-atlas) to generate your TopoJSON with combined features, fine-grained controls and no need of external dependencies]*
 
 ## Metadata
 
