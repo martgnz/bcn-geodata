@@ -19,8 +19,6 @@ $ ./convert.sh
 
 You can tweak the script to delete properties from the original shapefile and adjust the simplification.
 
-Thanks to [@oscarfonts](https://github.com/oscarfonts) for the NTv2 ICC grid.
-
 ## Source
 
 Ajuntament de Barcelona / [CartoBCN](http://w20.bcn.cat/cartobcn/) ([CC-BY](http://w133.bcn.cat/geoportal/descargas/ca_ca_cond_us_carto.pdf)).

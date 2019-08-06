@@ -3,13 +3,7 @@
 generate_files() {
   rm $1/*.geojson $1/*.json
 
-  ogr2ogr -f "GeoJSON" \
-    -s_srs "+init=epsg:23031 +nadgrids=./src/100800401.gsb +wktext" \
-    -t_srs EPSG:4326 \
-    -overwrite \
-    "$1"/"$1".geojson \
-    src/"$2".shp
-
+  ogr2ogr -f "GeoJSON" -t_srs crs:84 "$1"/"$1".geojson src/"$2".shp
   geo2topo -q 1e4 "$1"/"$1".geojson > "$1"/"$1".json
 } 
 
