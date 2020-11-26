@@ -4,7 +4,7 @@ The [official shapefiles](http://w20.bcn.cat/cartobcn/default.aspx) of Barcelona
 
 *[Check out [barcelona-atlas](https://github.com/martgnz/barcelona-atlas) to generate your TopoJSON with combined features, fine-grained controls and no need of external dependencies]*
 
-<img src="https://cloud.githubusercontent.com/assets/1236790/22386529/ca66b7ae-e4d7-11e6-942b-19f83226bccc.png" width="480" height="auto">
+<img src="https://cloud.githubusercontent.com/assets/1236790/22386529/ca66b7ae-e4d7-11e6-942b-19f83226bccc.png" width="100%" height="auto">
 
 ## Metadata
 
