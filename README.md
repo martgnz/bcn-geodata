@@ -1,6 +1,6 @@
 # Barcelona geodata
 
-<img align="left" src="https://cloud.githubusercontent.com/assets/1236790/22386529/ca66b7ae-e4d7-11e6-942b-19f83226bccc.png" width="250" height="auto">
+<img align="right" src="https://cloud.githubusercontent.com/assets/1236790/22386529/ca66b7ae-e4d7-11e6-942b-19f83226bccc.png" width="300" height="auto">
 
 The [official shapefiles](http://w20.bcn.cat/cartobcn/default.aspx) of Barcelona, converted to GeoJSON and TopoJSON for making your life easier.
 
