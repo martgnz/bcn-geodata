@@ -1,12 +1,10 @@
 # Barcelona geodata
 
-<img align="right" src="https://cloud.githubusercontent.com/assets/1236790/22386529/ca66b7ae-e4d7-11e6-942b-19f83226bccc.png" width="300" height="auto">
+<img align="right" src="seccio-censal.jpg" width="300" height="auto">
 
-The [official shapefiles](http://w20.bcn.cat/cartobcn/default.aspx) of Barcelona, converted to GeoJSON and TopoJSON for making your life easier.
+The [official shapefiles](http://w20.bcn.cat/cartobcn/default.aspx) of Barcelona, converted to GeoJSON and TopoJSON.
 
 *[Check out [barcelona-atlas](https://github.com/martgnz/barcelona-atlas) to generate your TopoJSON with combined features, fine-grained controls and no need of external dependencies]*
-
-
 
 ## Metadata
 
@@ -19,7 +17,7 @@ Assuming that you have [ogr2ogr](https://trac.osgeo.org/gdal/wiki/DownloadingGda
 ```bash
 $ ./convert.sh
 ```
-- Voilà! Find the files in their respectives folder.
+- Voilà! Find the files in their respective folder.
 
 You can tweak the script to delete properties from the original shapefile and adjust the simplification.
 
@@ -27,4 +25,4 @@ You can tweak the script to delete properties from the original shapefile and ad
 
 Ajuntament de Barcelona / [CartoBCN](http://w20.bcn.cat/cartobcn/) ([CC-BY](http://w133.bcn.cat/geoportal/descargas/ca_ca_cond_us_carto.pdf)).
 
-Last data update: 11/03/2020.
+Last data source update: 11/03/2020.
